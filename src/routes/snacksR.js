@@ -2,10 +2,10 @@ const express = require('express')
 const router = express.Router()
 const ctrl = require('../controllers/snacksC.js')
 
-router.get('/dogs', ctrl.getAll)
-router.get('/dogs/:id', ctrl.getOne)
-router.post('/dogs', ctrl.create)
-router.put('/dogs/:id', ctrl.modify)
-router.delete('/dogs/:id', ctrl.del)
+router.get('/snacks', ctrl.getAll)
+router.get('/snacks/:id', ctrl.getOne)
+router.post('/snacks', ctrl.create)
+router.put('/snacks/:id', ctrl.modify)
+router.delete('/snacks/:id', ctrl.del)
 
 module.exports = {router}
